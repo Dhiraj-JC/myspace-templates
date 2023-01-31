@@ -1,0 +1,56 @@
+SignUp
+
+<>
+      <div className='container pt-5'>
+        <h1 className='display-1 pb-2'>My Space</h1>
+        <div className='card'>
+          <div className='card-header'>Sign Up</div>
+          <div className='card-body'>
+            <form >
+              <div className='mb-3'>
+                <label htmlFor='userName' className='form-label'>
+                  Email address
+                </label>
+                <input
+                  type='email'
+                  className='form-control'
+                  id='userName'
+                />
+              </div>
+              <div className='mb-3'>
+                <label htmlFor='password' className='form-label'>
+                  Password
+                </label>
+                <input
+                  type='password'
+                  className='form-control'
+                  id='password'
+                  autoComplete='on'
+                />
+              </div>
+              <div className='mb-3'>
+                <label htmlFor='confirmPassword' className='form-label'>
+                  Confirm Password
+                </label>
+                <input
+                  type='password'
+                  className='form-control'
+                  id='confirmPassword'
+                  autoComplete='on'
+                />
+              </div>
+              <button type='submit' className='btn btn-primary'>
+                Submit
+              </button>
+              <Link
+                to='/login'
+                className='card-link'
+                style={{ marginLeft: '10px' }}
+              >
+                Login
+              </Link>
+            </form>
+          </div>
+        </div>
+      </div>
+    </>
